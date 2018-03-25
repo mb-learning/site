@@ -1,0 +1,278 @@
+<!-- home.htm -->
+{% extends 'general/general_base.htm' %}
+{% load staticfiles %}
+{% block head_title %}Home{% endblock head_title %}
+
+
+{% block extra_head %}
+	<link rel="stylesheet" type="text/css" href="{% static 'inspiration-button/css/normalize.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'inspiration-button/css/vicons-font.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'inspiration-button/css/base.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'inspiration-button/css/buttons.css' %}" />
+{% endblock extra_head%}
+
+
+{% block maintext %}
+	<main id=>
+
+		{% include 'includes/header.htm' %}
+
+		<!-- Services -->
+		<section id='services'  class='bg-light' >
+			<div class='container'>
+				<div class='row'>
+				<div class='col-lg-12 text-center'>
+				<h2 class='section-heading text-uppercase'>Services</h2>
+				<h3 class='section-subheading text-muted'>Lorem ipsum dolor sit amet consectetur.</h3>
+				</div>
+				</div>
+				<div class='row text-center'>
+					<div class='col-md-6'>
+						<span class='fa-stack fa-4x'>
+						<i class='fa fa-circle fa-stack-2x text-primary'></i>
+						<i class='fa fa-shopping-cart fa-stack-1x fa-inverse'></i>
+						</span>
+						<h4 class='service-heading'>One-on-One Learning Sessions</h4>
+						<p class='text-muted'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+					</div>
+					<div class='col-md-6'>
+						<span class='fa-stack fa-4x'>
+						<i class='fa fa-circle fa-stack-2x text-primary'></i>
+						<i class='fa fa-laptop fa-stack-1x fa-inverse'></i>
+						</span>
+						<h4 class='service-heading'>Small Group Learning Sessions</h4>
+						<p class='text-muted'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+					</div>
+					<div class='col-md-6'>
+						<span class='fa-stack fa-4x'>
+						<i class='fa fa-circle fa-stack-2x text-primary'></i>
+						<i class='fa fa-lock fa-stack-1x fa-inverse'></i>
+						</span>
+						<h4 class='service-heading'>Online Courses</h4>
+						<p class='text-muted'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+					</div>
+					<div class='col-md-6'>
+						<span class='fa-stack fa-4x'>
+						<i class='fa fa-circle fa-stack-2x text-primary'></i>
+						<i class='fa fa-lock fa-stack-1x fa-inverse'></i>
+						</span>
+						<h4 class='service-heading'>Learning Community</h4>
+						<p class='text-muted'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- How It Works -->
+		<section id='how-it-works'>
+			<div class='container'>
+				<div class='row'>
+					<div class='col-lg-12 text-center'>
+						<h2 class='section-heading text-uppercase'>How Our Program Works.</h2>
+						<h3 class='section-subheading text-muted'>Lorem ipsum dolor sit amet consectetur.</h3>
+					</div>
+				</div>
+				<div class='row'>
+					<div class='col-lg-12'>
+						<ul class='timeline'>
+							<li>
+								<div class='timeline-image'>
+									<br>
+									<h2>Step
+									<br>1</h2>
+									<!-- <img class='rounded-circle img-fluid' src='{% static 'img/about/1.jpg' %}' alt=''> -->
+								</div>
+								<div class='timeline-panel'>
+									<div class='timeline-heading'>
+										<h4 class='subheading'>Schedule Your First Session Today</h4>
+									</div>
+									<div class='timeline-body'>
+										<p class='text-muted'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+									</div>
+								</div>
+							</li>
+							<li class='timeline-inverted'>
+								<div class='timeline-image'>
+									<br>
+									<h2>Step
+									<br>2</h2>
+									<!-- <img class='rounded-circle img-fluid' src='{% static 'img/about/3.jpg' %}' alt=''> -->
+								</div>
+								<div class='timeline-panel'>
+									<div class='timeline-heading'>
+										<h4 class='subheading'>Evaluate Students Programming and Math Levels</h4>
+									</div>
+									<div class='timeline-body'>
+										<p class='text-muted'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class='timeline-image'>
+									<br>
+									<h2>Step
+									<br>3</h2>
+									<!-- <img class='rounded-circle img-fluid' src='{% static 'img/about/3.jpg' %}' alt=''> -->
+								</div>
+								<div class='timeline-panel'>
+									<div class='timeline-heading'>
+										<h4 class='subheading'>Match With An Instructor</h4>
+									</div>
+									<div class='timeline-body'>
+										<p class='text-muted'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+									</div>
+								</div>
+							</li>
+							<li class='timeline-inverted'>
+								<div class='timeline-image'>
+									<br>
+									<h2>Step
+									<br>4</h2>
+									<!-- <img class='rounded-circle img-fluid' src='{% static 'img/about/4.jpg' %}' alt=''> -->
+								</div>
+								<div class='timeline-panel'>
+									<div class='timeline-heading'>
+										<h4 class='subheading'>Start Learning Your First Programming Language</h4>
+									</div>
+									<div class='timeline-body'>
+										<p class='text-muted'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+									</div>
+								</div>
+							</li>
+							<li class='timeline-inverted'>
+								<div class='timeline-image'>
+									<h4>Continue
+									<br>Growing Your
+									<br>Knowledge!</h4>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Courses Grid -->
+		<section id='portfolio'  class='bg-light' >
+			<div class='container'>
+				<div class='row'>
+					<div class='col-lg-12 text-center'>
+						<h2 class='section-heading text-uppercase'>Portfolio</h2>
+						<h3 class='section-subheading text-muted'>Lorem ipsum dolor sit amet consectetur.</h3>
+					</div>
+				</div>
+				<div class='row'>
+					<div class='col-md-4 col-sm-6 portfolio-item'>
+						<a class='portfolio-link' data-toggle='modal' href='#portfolioModal4'>
+							<div class='portfolio-hover'>
+								<div class='portfolio-hover-content'>
+									<i class='fa fa-plus fa-3x'></i>
+								</div>
+							</div>
+							<img class='img-fluid' src="{% static 'img/portfolio/04-thumbnail.jpg' %}"" alt=''>
+						</a>
+						<div class='portfolio-caption'>
+							<h4>Intro to Scratch Programming</h4>
+							<p class='text-muted'>Beginner</p>
+						</div>
+					</div>
+					<div class='col-md-4 col-sm-6 portfolio-item'>
+						<a class='portfolio-link' data-toggle='modal' href='#portfolioModal4'>
+							<div class='portfolio-hover'>
+								<div class='portfolio-hover-content'>
+									<i class='fa fa-plus fa-3x'></i>
+								</div>
+							</div>
+							<img class='img-fluid' src="{% static 'img/portfolio/04-thumbnail.jpg' %}"" alt=''>
+						</a>
+						<div class='portfolio-caption'>
+							<h4>Intro to Python Programming</h4>
+							<p class='text-muted'>Beginner</p>
+						</div>
+					</div>
+					<div class='col-md-4 col-sm-6 portfolio-item'>
+						<a class='portfolio-link' data-toggle='modal' href='#portfolioModal5'>
+							<div class='portfolio-hover'>
+								<div class='portfolio-hover-content'>
+									<i class='fa fa-plus fa-3x'></i>
+								</div>
+							</div>
+							<img class='img-fluid' src="{% static 'img/portfolio/05-thumbnail.jpg' %}" alt=''>
+						</a>
+						<div class='portfolio-caption'>
+							<h4>Intro to Python Programming</h4>
+							<p class='text-muted'>Intermediate</p>
+						</div>
+					</div>
+					<div class='col-md-4 col-sm-6 portfolio-item'>
+						<a class='portfolio-link' data-toggle='modal' href='#portfolioModal6'>
+							<div class='portfolio-hover'>
+								<div class='portfolio-hover-content'>
+									<i class='fa fa-plus fa-3x'></i>
+								</div>
+							</div>
+							<img class='img-fluid' src="{% static 'img/portfolio/06-thumbnail.jpg' %}" alt=''>
+						</a>
+						<div class='portfolio-caption'>
+							<h4>AP Computer Science Principles</h4>
+							<p class='text-muted'>Advanced</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Modal -->
+		<div class="modal fade" id="overlay" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						....
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 
+		<div class="modal fade" id="overlay">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Modal title</h4>
+					</div>
+					<div class="modal-body">
+						<p>Context here</p>
+					</div>
+				</div>
+			</div>
+		</div> -->
+	</main>
+{% endblock maintext %}
+
+{% block include_scripts %}
+{% endblock include_scripts %}
+
+{% block scripts %}
+	// inspiration button script
+	(function() {
+		var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+		if(isSafari) {
+			document.getElementById('support-note').style.display = 'block';
+		}
+	})();
+
+
+	$('#overlay').modal('hide');
+	setTimeout(function() {
+		$('#overlay').modal('show');
+	}, 4000);
+{% endblock scripts %}
