@@ -218,7 +218,7 @@
 		</section>
 
 		<!-- Modal -->
-		<div class="modal fade" id="overlay" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal fade" id="trial-form" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
@@ -238,7 +238,7 @@
 			</div>
 		</div>
 		<!-- 
-		<div class="modal fade" id="overlay">
+		<div class="modal fade" id="trial-form">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
@@ -252,19 +252,75 @@
 			</div>
 		</div> -->
 	</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {% endblock maintext %}
 
 {% block include_scripts %}
 {% endblock include_scripts %}
 <script type="text/javascript">
 {% block scripts %}
-	$('#overlay').modal('hide');
+	$('#trial-form').modal('hide');
 	$('#email-form').click(function() {
-		$('#overlay').modal('show');
+
+id_parent_email
+		// $('#trial-form').modal('show');
 	});
 	// setTimeout(function() {
-	// 	$('#overlay').modal('show');
+	// 	$('#trial-form').modal('show');
 	// }, 60000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 {% endblock scripts %}
 </script>

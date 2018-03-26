@@ -6,20 +6,25 @@
 			<div class="intro-lead-in">Welcome To MB Learning!</div>
 			<div class="row justify-content-md-center m-4">
 				<div class="col-md-auto">
-					<button class="btn btn-secondary btn-xl js-scroll-trigger" href="#how-it-works" data-text="Tell Me More"><span>Tell Me More</span></button>
+					<a class="btn btn-secondary btn-xl js-scroll-trigger" href="#how-it-works">Tell Me More</a>
 				</div>
 			</div>
 			<div class="row justify-content-md-center m-5">
 				<div class="col-md-auto">
-					<h2>Claim Your Free 1 Hour <br>One on One<br>Evaluation and Programming Lesson<br>With One Of Our Instructors Today</h2>
-					<div class="input-group m-3">
-						<input type="text" class="form-control" placeholder="Parent's Email" aria-label="Parent's Email" aria-describedby="basic-addon2">
-						<div class="input-group-append">
-							<button id='email-form' class="btn btn-primary btn-xl" type="button">Get Started Here</button>
-						</div>
-					</div>
+					<h2>Claim Your Free 1 Hour<br>One on One<br>Evaluation and Programming Lesson<br>With One Of Our Instructors Today</h2>
+					<form id="email-form" method="post" action="">{% csrf_token %}
+						<div class="input-group m-3">
+							{{ email_optin_form.email_address.errors }}
+							{{ email_optin_form.email_address }}
+							<div class="input-group-append">
+								<button id='email-form' class="btn btn-primary btn-xl" type="button">Get Started Here</button>
+							</div>
+						</div>					
+					</form>
 				</div>
 			</div>
+
+			
 
 		</div>
 	</div>
