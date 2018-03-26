@@ -25,7 +25,7 @@ SECRET_KEY = 'ze9tktc6%dj1q-l2k78qk)5x@whjabw_fr$a=%rxpc5dp&wged'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost',  'jbates.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost',  'jbates.com', 'mb-learning.herokuapp.com']
 
 
 # Application definition
