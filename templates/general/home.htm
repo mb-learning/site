@@ -5,10 +5,6 @@
 
 
 {% block extra_head %}
-	<link rel="stylesheet" type="text/css" href="{% static 'inspiration-button/css/normalize.css' %}" />
-	<link rel="stylesheet" type="text/css" href="{% static 'inspiration-button/css/vicons-font.css' %}" />
-	<link rel="stylesheet" type="text/css" href="{% static 'inspiration-button/css/base.css' %}" />
-	<link rel="stylesheet" type="text/css" href="{% static 'inspiration-button/css/buttons.css' %}" />
 {% endblock extra_head%}
 
 
@@ -260,19 +256,15 @@
 
 {% block include_scripts %}
 {% endblock include_scripts %}
-
+<script type="text/javascript">
 {% block scripts %}
-	// inspiration button script
-	(function() {
-		var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
-		if(isSafari) {
-			document.getElementById('support-note').style.display = 'block';
-		}
-	})();
-
-
 	$('#overlay').modal('hide');
-	setTimeout(function() {
+	$('#email-form').click(function() {
 		$('#overlay').modal('show');
-	}, 4000);
+	});
+	// setTimeout(function() {
+	// 	$('#overlay').modal('show');
+	// }, 60000);
+
 {% endblock scripts %}
+</script>
